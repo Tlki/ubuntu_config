@@ -35,4 +35,10 @@ echo "Installing z command"
 git clone http://github.com/rupa/z /tmp/z
 mv /tmp/z/z.sh /usr/bin/
 
+echo "Installing zsh-autosuggestions"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+echo "Installing zsh-syntax-highlighting"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 echo "You may have to reboot the system for the changes to take effect."
