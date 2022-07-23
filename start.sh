@@ -31,4 +31,8 @@ copy vimrc ~/.vimrc
 echo "Installing vim plugins"
 vim +PluginInstall +qall
 
+echo "Installing z command"
+git clone http://github.com/rupa/z /tmp/z
+mv /tmp/z/z.sh /usr/bin/
+
 echo "You may have to reboot the system for the changes to take effect."
