@@ -2,6 +2,7 @@ echo "Installing dependencies"
 apt-get update
 apt-get -y install git
 apt-get -y install curl
+apt-get -y install xsel
 
 echo "Installing vim..."
 apt-get -y install vim
@@ -13,6 +14,7 @@ chsh -s $(which zsh) $USER
 
 echo "Installing tmux..."
 apt-get -y install tmux
+git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
 
 echo "Installing powerline..."
 sudo apt-get -y install powerline
