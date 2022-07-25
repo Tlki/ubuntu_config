@@ -6,6 +6,7 @@ apt-get -y install xsel
 
 echo "Installing vim..."
 apt-get -y install vim
+apt-get -y install vim-gtk3
 
 echo "Installing zsh"
 apt-get -y install zsh
