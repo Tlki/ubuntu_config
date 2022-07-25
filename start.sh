@@ -1,5 +1,7 @@
 echo "Installing dependencies"
 apt-get update
+apt-get -y install make libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+apt-get -y install build-essential
 apt-get -y install git
 apt-get -y install curl
 apt-get -y install xsel
@@ -47,5 +49,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 echo "Installing zsh-syntax-highlighting"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+echo "Installing pyenv and pyenv-virtualenv"
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 echo "You may have to reboot the system for the changes to take effect."
