@@ -78,6 +78,10 @@ Plugin 'VundleVim/Vundle.vim'
 " For vim colors
 Plugin 'morhetz/gruvbox'
 
+" For code check
+
+Plugin 'dense-analysis/ale'
+
 " For vim bottom bar
 Plugin 'itchyny/lightline.vim'
 

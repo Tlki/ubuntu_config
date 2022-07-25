@@ -3,6 +3,10 @@ apt-get update
 apt-get -y install git
 apt-get -y install curl
 apt-get -y install xsel
+apt-get -y install python3-pip
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+python3 -m pip install flake8 # this is mainly for ALE (vim plugin)
 
 echo "Installing vim..."
 apt-get -y install vim
