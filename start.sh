@@ -36,7 +36,7 @@ vim +PluginInstall +qall
 
 echo "Installing z command"
 git clone http://github.com/rupa/z /tmp/z
-mv /tmp/z/z.sh /usr/bin/
+sudo mv /tmp/z/z.sh /usr/bin/
 
 echo "Installing zsh-autosuggestions"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
